@@ -4,8 +4,12 @@
 
   .intro {
 
+    img {
+      border-radius: 5px;
+    }
+
     h2 {
-      padding: 15px;
+      .Pad15;
     }
 
     p {
@@ -28,7 +32,7 @@
   }
 
   .visit-planets {
-    padding: 15px;
+    .Pad15;
 
     h3 {
       margin-top: 11px;
@@ -58,6 +62,20 @@
       }
 
       .btn {
+        .CustBtn(@btn-bg-color, 35px, 5px, @btn-font-color, 1.8rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 100px;
+        width: 32%;
+        padding-bottom: 5px;
+
+        &:hover {
+          color: @btn-font-color-hover;
+          background-color: @btn-background-color-hover;
+          
+        }
+        
       }
     }
 
