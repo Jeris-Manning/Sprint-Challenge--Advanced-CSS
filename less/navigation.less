@@ -1,1 +1,30 @@
 // Navigation code here
+nav {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: @nav-bg;
+  padding-bottom: 12px;
+
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+  }
+  div {
+    display: flex;
+    width: 410px;
+    justify-content: space-around;
+
+    a {
+      text-decoration: none;
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: @nav-font;
+
+      &:hover {
+        color: @nav-font-hover;
+      }
+    }
+  }
+}

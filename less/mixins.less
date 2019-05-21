@@ -1,1 +1,17 @@
 // Mixins Here
+.Pad15 {
+  padding: 15px;
+}
+
+.PhoneImg {
+  width: 90%;
+  margin: 20px 5%;
+}
+
+.CustBtn(@bgColor, @btnHeight, @radius, @textColor, @textSize) {
+  background: @bgColor;
+  height: @btnHeight;
+  border-radius: @radius;
+  color: @textColor;
+  font-size: @textSize;
+}
